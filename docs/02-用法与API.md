@@ -1,4 +1,5 @@
 # 02 · 用法与 API
+English: `docs/02-用法与API.en.md`
 
 > 全部函数都在 `doom.virtual.health:*`（核心）与 `doom.bossbar:*`（血条）两个命名空间下。
 > 除特别说明外，API 都以 `@s` 为虚拟血量实体执行；非虚拟血量实体调用会 `return fail`（可以用这个当判定）。

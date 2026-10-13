@@ -1,4 +1,5 @@
 # 文档索引 · doom.virtual.health
+English: `docs/README.en.md`
 
 > 想直接装：去 [`../dist/`](../dist) 下 `doom.virtual.health-v3.1.0.zip`（1.21.5–26.2）或 `doom.virtual.health-v3.1.0-mc26.3.zip`（26.3），解压后把 `doom.virtual.health/` 丢进 `datapacks/` → `/reload`。
 > 想先看代码：源码就是数据包本体 [`../doom.virtual.health/`](../doom.virtual.health)，63 个 mcfunction。没有生成器，也没有 `src/`。

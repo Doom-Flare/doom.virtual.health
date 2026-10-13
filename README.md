@@ -1,4 +1,5 @@
 # doom.virtual.health — 虚拟血量系统 + Bossbar 血条（数据包）
+English: `README.en.md`
 
 [![最新版本](https://img.shields.io/github/v/release/DoomDecapitator/doom.virtual.health?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/DoomDecapitator/doom.virtual.health/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5%20%E2%80%93%2026.3-3C8527)](docs/04-兼容与版本.md)

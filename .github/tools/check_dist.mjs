@@ -94,7 +94,7 @@ for (const [zipName, srcDir] of PAIRS) {
     if (!n.startsWith(top)) { err(zipName + ' 有不带顶层前缀的条目 ' + n); continue; }
     inZip.set(n.slice(top.length), z.data(n));
   }
-  const src = walk(srcDir);
+  const src = walk(srcDir).filter((f) => !f.endsWith('.en.md'));
   const missing = src.filter((f) => !inZip.has(f));
   const extra = [...inZip.keys()].filter((f) => !src.includes(f));
   let diff = 0;

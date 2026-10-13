@@ -50,7 +50,9 @@ const SELF = ['.github/tools/check_leak.mjs'];
 const isCommentLine = (line) => /^\s*(#|\/\/)/.test(line);
 
 const ALLOW = new Set(['README.md', 'LICENSE', 'CHANGELOG.md', '.gitignore', '.gitattributes',
-  'dist', 'docs', '.github', 'doom.virtual.health', 'variants']);
+  'dist', 'docs', '.github', 'doom.virtual.health', 'variants',
+  // 英文译本（与中文并列，不进发行包）
+  'README.en.md', 'CHANGELOG.en.md']);
 
 const git = (args) => execFileSync(GIT, args, { cwd: ROOT, encoding: 'utf8' });
 const walk = (d, out = []) => {

@@ -1,4 +1,5 @@
 # 变更日志 · doom.virtual.health
+English: `CHANGELOG.en.md`
 
 > 口径：只记会影响玩家的改动：改了什么，为什么，能核对什么。
 > 版本号规则：`vX.Y.Z`（正式）· `vX.Y.Z-beta.N` / `-rc.N`（预发布）；Minecraft 版本不塞进版本号，
