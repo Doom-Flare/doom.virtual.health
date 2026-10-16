@@ -3,7 +3,7 @@ English: `docs/README.en.md`
 
 > 想直接装：去 [`../dist/`](../dist) 下 `doom.virtual.health-v3.1.0.zip`（1.21.5–26.2）或 `doom.virtual.health-v3.1.0-mc26.3.zip`（26.3），解压后把 `doom.virtual.health/` 丢进 `datapacks/` → `/reload`。
 > 想先看代码：源码就是数据包本体 [`../doom.virtual.health/`](../doom.virtual.health)，63 个 mcfunction。没有生成器，也没有 `src/`。
-> 想看图文站：<https://doomdecapitator.github.io/doom.virtual.health/>。就是本目录的 `index.html`，随仓库一起发布。
+> 想看图文站：<https://doom-flare.github.io/doom.virtual.health/>。就是本目录的 `index.html`，随仓库一起发布。
 > 想知道每版改了什么：看 [`../CHANGELOG.md`](../CHANGELOG.md)。
 
 | 文档 | 讲什么 | 读它的时机 |
@@ -28,4 +28,4 @@ English: `docs/README.en.md`
 ## 遇到问题
 
 先对一下 [04-兼容与版本](04-兼容与版本.md) 里的版本矩阵，以及 [02-用法与API](02-用法与API.md) 末尾的「已知 Edge Cases」与「注意事项」，
-再去仓库的 [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues) 报，那里有表单，会问你要版本、复现步骤和日志。
+再去仓库的 [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues) 报，那里有表单，会问你要版本、复现步骤和日志。

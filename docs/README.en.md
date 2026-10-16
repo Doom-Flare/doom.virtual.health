@@ -4,7 +4,7 @@
 
 > Want to install it right away: grab [`../dist/`](../dist) `doom.virtual.health-v3.1.0.zip` (1.21.5–26.2) or `doom.virtual.health-v3.1.0-mc26.3.zip` (26.3), unzip, drop `doom.virtual.health/` into `datapacks/` → `/reload`.
 > Want to read the code first: the source is the datapack itself, [`../doom.virtual.health/`](../doom.virtual.health), 63 mcfunction files. No generator, no `src/`.
-> Want the illustrated site: <https://doomdecapitator.github.io/doom.virtual.health/>. That is this directory's `index.html`, published with the repo.
+> Want the illustrated site: <https://doom-flare.github.io/doom.virtual.health/>. That is this directory's `index.html`, published with the repo.
 > Want to know what changed in each version: see [`../CHANGELOG.md`](../CHANGELOG.md).
 
 | Document | What it covers | When to read it |
@@ -29,4 +29,4 @@
 ## Running into problems
 
 First check the version matrix in [04 · Compatibility and versions](04-兼容与版本.md), and the "Known Edge Cases" and "Notes" sections at the end of [02 · Usage and API](02-用法与API.md),
-then report it in the repo's [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues), where a form will ask you for the version, reproduction steps and logs.
+then report it in the repo's [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues), where a form will ask you for the version, reproduction steps and logs.

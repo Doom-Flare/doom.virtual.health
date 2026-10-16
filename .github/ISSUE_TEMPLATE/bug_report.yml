@@ -10,8 +10,8 @@ body:
         缺哪样都可能让排查原地打转。**能让它复现的最小步骤**最值钱。
 
         报之前顺手看一眼：
-        [安装与排查](https://github.com/DoomDecapitator/doom.virtual.health/blob/main/docs/01-安装.md)
-        和 README 里的[已知 Edge Cases](https://github.com/DoomDecapitator/doom.virtual.health#已知-edge-cases边界情况)
+        [安装与排查](https://github.com/Doom-Flare/doom.virtual.health/blob/main/docs/01-安装.md)
+        和 README 里的[已知 Edge Cases](https://github.com/Doom-Flare/doom.virtual.health#已知-edge-cases边界情况)
         —— 有相当一部分"看起来是 bug"的现象在那两处已经写清楚是原版机制限制（E6 / E7 / E10 …）。
 
   - type: input

@@ -1,7 +1,7 @@
 # doom.virtual.health — 虚拟血量系统 + Bossbar 血条（数据包）
 English: `README.en.md`
 
-[![最新版本](https://img.shields.io/github/v/release/DoomDecapitator/doom.virtual.health?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/DoomDecapitator/doom.virtual.health/releases)
+[![最新版本](https://img.shields.io/github/v/release/Doom-Flare/doom.virtual.health?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/Doom-Flare/doom.virtual.health/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5%20%E2%80%93%2026.3-3C8527)](docs/04-兼容与版本.md)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-97ca00)](LICENSE)
 
@@ -30,7 +30,7 @@ English: `README.en.md`
 
 下载后建议先对一下校验值，见「校验下载的文件」。
 
-图文站点在 <https://doomdecapitator.github.io/doom.virtual.health/>，就是仓库里的 `docs/index.html`，随本仓库一起发布，不另存一份。
+图文站点在 <https://doom-flare.github.io/doom.virtual.health/>，就是仓库里的 `docs/index.html`，随本仓库一起发布，不另存一份。
 
 ## 源码在哪
 
@@ -395,7 +395,7 @@ execute as @e[tag=virtual_health_entity] run function doom.virtual.health:api/ge
 
 ## 已知 Edge Cases（边界情况）
 
-> ⚠️ 亟待更多玩家测试：以下是代码审查中识别出的边界情况，部分已在设计中规避，部分受原版机制限制。欢迎在 [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues) 反馈实测结果。
+> ⚠️ 亟待更多玩家测试：以下是代码审查中识别出的边界情况，部分已在设计中规避，部分受原版机制限制。欢迎在 [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues) 反馈实测结果。
 
 ### 数值精度类
 
@@ -437,7 +437,7 @@ execute as @e[tag=virtual_health_entity] run function doom.virtual.health:api/ge
 - `scale` 参数：`scale:1` = mHP，`scale:1000` = HP
 - 修改 enchantment JSON（vitality.json）需要重启服务器
 - 伤害倍率范围 `[1, 100000]`（×1000 标度）
-- 测试反馈渠道：遇到任何异常请在 [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues) 提交，附上复现步骤与版本号
+- 测试反馈渠道：遇到任何异常请在 [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues) 提交，附上复现步骤与版本号
 
 ## 文件结构
 
@@ -482,7 +482,7 @@ doom.virtual.health/                ← 数据包本体（zip 内顶层也是这
 | 全部文档索引 | [`docs/README.md`](docs/README.md) |
 | 首屏那张图怎么拍 | [`docs/图-首屏效果位.md`](docs/图-首屏效果位.md) |
 
-图文文档站在 <https://doomdecapitator.github.io/doom.virtual.health/>，就是仓库 `docs/index.html`，随本仓库一起发布。打不开时，`docs/` 里的 Markdown 手册内容一致。
+图文文档站在 <https://doom-flare.github.io/doom.virtual.health/>，就是仓库 `docs/index.html`，随本仓库一起发布。打不开时，`docs/` 里的 Markdown 手册内容一致。
 
 ## 许可
 

@@ -10,7 +10,7 @@
 - 百分比血量判定（`dvh.pp` / `dvh.pp_max` 实体级阈值）
 - 无敌控制、伤害倍率（×1000 标度）、余数精度补偿
 - 正确的死亡归属（UUID hex → `damage ... by <uuid>`）
-- **亟待更多玩家测试**：当前为社区早期版本，欢迎在 [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues) 反馈任何异常
+- **亟待更多玩家测试**：当前为社区早期版本，欢迎在 [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues) 反馈任何异常
 
 ---
 
@@ -397,7 +397,7 @@ execute as @e[tag=virtual_health_entity] run \
 - `scale` 参数：`scale:1` = mHP，`scale:1000` = HP
 - 修改 enchantment JSON（vitality.json）需要**重启服务器**
 - 伤害倍率范围 `[1, 100000]`（×1000 标度）
-- **测试反馈渠道**：遇到任何异常请在 [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues) 提交，附上复现步骤与版本号
+- **测试反馈渠道**：遇到任何异常请在 [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues) 提交，附上复现步骤与版本号
 
 ---
 
@@ -433,4 +433,4 @@ doom.virtual.health/
 
 ---
 
-> **作者**：Doom_Decapitator
+> **作者**：Doom_Flare

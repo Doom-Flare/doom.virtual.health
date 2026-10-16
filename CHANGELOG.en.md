@@ -135,7 +135,7 @@ Download: [`dist/doom.virtual.health-v3.0.0.zip`](dist/doom.virtual.health-v3.0.
   `.gitignore` and `.gitattributes` (`* -text`, locking bytes against newline rewriting).
 - Added the five-page `docs/` player handbook: Installation · Usage and API · Configuration · Compatibility and Versions · Credits and Licence.
 - The documentation site is kept and keeps serving: `docs/index.html` and `docs/.nojekyll` stay in `docs/` unchanged,
-  and GitHub Pages still publishes from `docs/` → <https://doomdecapitator.github.io/doom.virtual.health/>.
+  and GitHub Pages still publishes from `docs/` → <https://doom-flare.github.io/doom.virtual.health/>.
   The version marker in the page was updated from `v3.0` to `v3.0.0`; nothing else moved.
 - The datapack body was already at the top-level `doom.virtual.health/`, its position unchanged, every mcfunction readable directly.
 
@@ -173,7 +173,7 @@ This release moves the latest working copy over as-is (91 files). Relative to th
   `pack_format` raised to 81 (1.21.7 / 1.21.8), and a ceiling guard for `damage_mult` (H7).
 - Two commits the same day filled in the documentation: the full API reference, the `on_death` section, and notes on vitality and predicates; fixed `auto_init`'s handling of doubles
   (switched to `data get`, accepting double / int / string), and added the "Known Edge Cases" section.
-- This tag carries no zip. To use this version, download [`v3.0.0`](https://github.com/DoomDecapitator/doom.virtual.health/releases/tag/v3.0.0).
+- This tag carries no zip. To use this version, download [`v3.0.0`](https://github.com/Doom-Flare/doom.virtual.health/releases/tag/v3.0.0).
 
 ## v2.x and earlier
 

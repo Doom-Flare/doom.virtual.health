@@ -134,7 +134,7 @@ UUID hex 伤害真的杀死实体 / 4 个外部 API 签名可调。
   `.gitignore` 与 `.gitattributes`（`* -text`，锁住字节不被换行改写）。
 - 新增 `docs/` 玩家手册五页：安装 · 用法与 API · 配置 · 兼容与版本 · 致谢与许可。
 - 文档站保留并继续服务：`docs/index.html` 与 `docs/.nojekyll` 原样留在 `docs/`，
-  GitHub Pages 仍然从 `docs/` 发布 → <https://doomdecapitator.github.io/doom.virtual.health/>。
+  GitHub Pages 仍然从 `docs/` 发布 → <https://doom-flare.github.io/doom.virtual.health/>。
   页内版本标识从 `v3.0` 更新为 `v3.0.0`，其余内容未动。
 - 数据包本体本来就在顶层 `doom.virtual.health/`，位置不变，每个 mcfunction 都能直接点开读。
 
@@ -172,7 +172,7 @@ GitHub 上的包体停在 2026-08-05（`v3.0` 那次合并），工作区那一�
   `pack_format` 升到 81（1.21.7 / 1.21.8）、`damage_mult` 补上限保护（H7）。
 - 同日的两次提交补齐文档：完整 API 参考、`on_death` 章节、vitality 与 predicate 说明；修掉 `auto_init` 对 double 的处理
   （改用 `data get`，兼容 double / int / string），并补上“已知 Edge Cases”章节。
-- 这个标签没有附带 zip。想用这一版请下载 [`v3.0.0`](https://github.com/DoomDecapitator/doom.virtual.health/releases/tag/v3.0.0)。
+- 这个标签没有附带 zip。想用这一版请下载 [`v3.0.0`](https://github.com/Doom-Flare/doom.virtual.health/releases/tag/v3.0.0)。
 
 ## v2.x 及更早
 

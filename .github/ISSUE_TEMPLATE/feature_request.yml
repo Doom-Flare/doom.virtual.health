@@ -8,7 +8,7 @@ body:
       value: |
         先说清楚**你想解决什么问题**，再说你想加什么命令 —— 这样我们能判断是该加 API、该改默认值，还是本来就能用现有 API 拼出来。
 
-        提之前建议先扫一眼 [docs/02-用法与API.md](https://github.com/DoomDecapitator/doom.virtual.health/blob/main/docs/02-用法与API.md)：
+        提之前建议先扫一眼 [docs/02-用法与API.md](https://github.com/Doom-Flare/doom.virtual.health/blob/main/docs/02-用法与API.md)：
         22 个核心 API + 3 个 bossbar API + 7 个 predicate 已经覆盖了不少玩法，很多时候组合现有 API 就够。
 
   - type: textarea

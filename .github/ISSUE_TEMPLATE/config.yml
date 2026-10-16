@@ -1,14 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: 先看手册（安装 / 用法 / 配置 / 兼容）
-    url: https://github.com/DoomDecapitator/doom.virtual.health/blob/main/docs/README.md
+    url: https://github.com/Doom-Flare/doom.virtual.health/blob/main/docs/README.md
     about: 九成"装不上 / 血条不出现 / 命令写错"的问题在这五页里都有答案
   - name: 已知 Edge Cases（先对一下，免得白报）
-    url: https://github.com/DoomDecapitator/doom.virtual.health#已知-edge-cases边界情况
+    url: https://github.com/Doom-Flare/doom.virtual.health#已知-edge-cases边界情况
     about: 单 tick 超过 512 HP 的伤害会被截断、未加载区块不检测、/kill 不触发 on_death……
   - name: 版本与兼容（该不该装这个版本）
-    url: https://github.com/DoomDecapitator/doom.virtual.health/blob/main/docs/04-兼容与版本.md
+    url: https://github.com/Doom-Flare/doom.virtual.health/blob/main/docs/04-兼容与版本.md
     about: pack_format 81 · 目标 1.21.7 / 1.21.8 · 不需要实验性玩法
   - name: 图文文档站
-    url: https://doomdecapitator.github.io/doom.virtual.health/
+    url: https://doom-flare.github.io/doom.virtual.health/
     about: 和 docs/ 手册同一份内容，带排版

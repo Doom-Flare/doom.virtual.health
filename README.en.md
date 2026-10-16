@@ -2,7 +2,7 @@
 
 中文: `README.md`
 
-[![Latest release](https://img.shields.io/github/v/release/DoomDecapitator/doom.virtual.health?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/DoomDecapitator/doom.virtual.health/releases)
+[![Latest release](https://img.shields.io/github/v/release/Doom-Flare/doom.virtual.health?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/Doom-Flare/doom.virtual.health/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5%20%E2%80%93%2026.3-3C8527)](docs/04-兼容与版本.md)
 [![License](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-97ca00)](LICENSE)
 
@@ -31,7 +31,7 @@ See "MC version → which variant" below.
 
 After downloading, it is worth checking the checksum first — see "Verifying your download".
 
-The illustrated site is at <https://doomdecapitator.github.io/doom.virtual.health/>, which is just `docs/index.html` in this repo; it ships with the repo, there is no second copy.
+The illustrated site is at <https://doom-flare.github.io/doom.virtual.health/>, which is just `docs/index.html` in this repo; it ships with the repo, there is no second copy.
 
 ## Where the source is
 
@@ -396,7 +396,7 @@ For example usage see `function/mcdoc.mcfunction`. mcdoc needs Spyglass + the `M
 
 ## Known Edge Cases (boundary cases)
 
-> ⚠️ Needs more player testing: these are the edge cases identified during code review, some already designed around and some limited by vanilla mechanics. Real-machine results are welcome in [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues).
+> ⚠️ Needs more player testing: these are the edge cases identified during code review, some already designed around and some limited by vanilla mechanics. Real-machine results are welcome in [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues).
 
 ### Numeric precision
 
@@ -438,7 +438,7 @@ For example usage see `function/mcdoc.mcfunction`. mcdoc needs Spyglass + the `M
 - The `scale` parameter: `scale:1` = mHP, `scale:1000` = HP
 - Editing the enchantment JSON (vitality.json) requires a server restart
 - Damage multiplier range `[1, 100000]` (×1000 scale)
-- Test feedback: report anything unusual in [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues), with reproduction steps and version number
+- Test feedback: report anything unusual in [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues), with reproduction steps and version number
 
 ## File structure
 
@@ -483,7 +483,7 @@ These top-level entries in the repo are for players and are not in the zip: `REA
 | The full document index | [`docs/README.md`](docs/README.md) |
 | How to take that first-screen image | [`docs/图-首屏效果位.md`](docs/图-首屏效果位.md) |
 
-The illustrated documentation site is at <https://doomdecapitator.github.io/doom.virtual.health/>, which is the repo's `docs/index.html`, published with the repo. If it will not open, the Markdown handbook in `docs/` says the same thing.
+The illustrated documentation site is at <https://doom-flare.github.io/doom.virtual.health/>, which is the repo's `docs/index.html`, published with the repo. If it will not open, the Markdown handbook in `docs/` says the same thing.
 
 ## Licence
 
