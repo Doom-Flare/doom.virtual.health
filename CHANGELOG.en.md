@@ -9,6 +9,24 @@
 
 ---
 
+## v3.1.1 · attribution and link tidy-up (repack) · 2026-10-16
+
+- [`dist/doom.virtual.health-v3.1.1.zip`](dist/doom.virtual.health-v3.1.1.zip): 1.21.5 – 26.2 (primary)
+- [`dist/doom.virtual.health-v3.1.1-mc26.3.zip`](dist/doom.virtual.health-v3.1.1-mc26.3.zip): 26.3 only
+ · sha256 `7de698051b48a820896d720ac6176f6de27735b3343dffd22cb489feb5ac12b6`
+ · sha256 `92a6171b30ea1836e343dd66afc4f15d7ba059c6274f3743d1fab87f128e8e05`
+
+> The command layer is byte-identical to v3.1.0; not a single character changed in the 63 mcfunction files.
+> This release only tidies the author name and repository links inside the pack README (old username → `Doom_Flare`), then repacks the zips and recomputes their sha256 as the rules require.
+
+### What you can verify
+
+- All 92 entries of `dist/doom.virtual.health-v3.1.1.zip` are byte-identical to the same-named files under [`doom.virtual.health/`](doom.virtual.health) (0 differences).
+- All 92 entries of `dist/doom.virtual.health-v3.1.1-mc26.3.zip` are byte-identical to the same-named files under [`variants/doom.virtual.health-26.3/`](variants/doom.virtual.health-26.3) (0 differences).
+- Compared with v3.1.0, only `README.md` inside the pack differs; the other 91 entries are byte-identical.
+
+---
+
 ## v3.1.0 · multi-version support (1.21.5 → 26.3) · 2026-10-05
 
 Downloads:

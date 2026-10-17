@@ -2,7 +2,7 @@
 
 中文: `docs/README.md`
 
-> Want to install it right away: grab [`../dist/`](../dist) `doom.virtual.health-v3.1.0.zip` (1.21.5–26.2) or `doom.virtual.health-v3.1.0-mc26.3.zip` (26.3), unzip, drop `doom.virtual.health/` into `datapacks/` → `/reload`.
+> Want to install it right away: grab [`../dist/`](../dist) `doom.virtual.health-v3.1.1.zip` (1.21.5–26.2) or `doom.virtual.health-v3.1.1-mc26.3.zip` (26.3), unzip, drop `doom.virtual.health/` into `datapacks/` → `/reload`.
 > Want to read the code first: the source is the datapack itself, [`../doom.virtual.health/`](../doom.virtual.health), 63 mcfunction files. No generator, no `src/`.
 > Want the illustrated site: <https://doom-flare.github.io/doom.virtual.health/>. That is this directory's `index.html`, published with the repo.
 > Want to know what changed in each version: see [`../CHANGELOG.md`](../CHANGELOG.md).
@@ -18,7 +18,7 @@
 
 ## Conventions
 
-- Version numbers: `vX.Y.Z`. Currently `v3.1.0`. Wherever a version number appears in the docs, it describes that version's actual behaviour.
+- Version numbers: `vX.Y.Z`. Currently `v3.1.1`. Wherever a version number appears in the docs, it describes that version's actual behaviour.
 - Which build counts as "the repo body": [`../doom.virtual.health/`](../doom.virtual.health). It is byte-identical to the zip under [`../dist/`](../dist),
   so the docs do not distinguish "repo version" from "download version"; they are the same thing.
 - This pack has no generator: editing the pack = editing the mcfunction files under `doom.virtual.health/data/doom.virtual.health/function/` directly.

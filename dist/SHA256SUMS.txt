@@ -1,2 +1,2 @@
-cd556d2b946fb4a8c24a37c242c4e0cedf6f9eb3d296614c0ad17af02032145b  doom.virtual.health-v3.1.0.zip
-51bcccbc04d4742c689140863c166aa50e13a683c587735f4e4f741344db8816  doom.virtual.health-v3.1.0-mc26.3.zip
+7de698051b48a820896d720ac6176f6de27735b3343dffd22cb489feb5ac12b6  doom.virtual.health-v3.1.1.zip
+92a6171b30ea1836e343dd66afc4f15d7ba059c6274f3743d1fab87f128e8e05  doom.virtual.health-v3.1.1-mc26.3.zip

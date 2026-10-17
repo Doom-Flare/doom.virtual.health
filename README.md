@@ -17,8 +17,8 @@ English: `README.en.md`
 
 | 你的 MC 版本 | 下这个 |
 |---|---|
-| 1.21.5 – 26.2 | `dist/doom.virtual.health-v3.1.0.zip` |
-| 26.3 | `dist/doom.virtual.health-v3.1.0-mc26.3.zip` |
+| 1.21.5 – 26.2 | `dist/doom.virtual.health-v3.1.1.zip` |
+| 26.3 | `dist/doom.virtual.health-v3.1.1-mc26.3.zip` |
 
 见下面「MC 版本 → 用哪份变体」。
 
@@ -38,13 +38,13 @@ English: `README.en.md`
 
 ## 当前状态
 
-**v3.1.0 正式发布（Latest）**，支持 Minecraft 1.21.5 到 26.3。
+**v3.1.1 正式发布（Latest）**，支持 Minecraft 1.21.5 到 26.3。
 
-玩法行为与 v3.0.0 完全一致（63 个 mcfunction 一字未改）。这一版改的是能不能装上去：26.3 改了 `enchantment` 注册表的 JSON 形状，旧写法会让服务器直接起不来，已修好并真机复验。
+命令层与 v3.1.0 逐字节相同（63 个 mcfunction 一字未改）。这一版只做署名与链接整理：包内 README 里的作者名与仓库链接从旧用户名更新为 `Doom_Flare`；玩法、命令、API 与存档兼容性都跟 v3.1.0 一致。
 
-三台实测全绿：1.21.5 / 1.21.10 / 26.3 各 12/12 断言通过，8 类加载错误全 0。
+沿用 v3.1.0 的三台实测结论（包内除 README 外未改动）：1.21.5 / 1.21.10 / 26.3 各 12/12 断言通过，8 类加载错误全 0。
 
-包内的 `pack.mcmeta` 描述串仍写着「DVH v3.0」，那是同一个版本，不是旧包。
+包内的 `pack.mcmeta` 描述串仍写着「DVH v3.0」，那是包内显示名，按惯例保留，不是旧包。
 
 可以装进存档玩，但请先备份存档。
 
@@ -54,7 +54,7 @@ English: `README.en.md`
 
 | 步 | 做什么 |
 |---|---|
-| ① | 下载 [`dist/doom.virtual.health-v3.1.0.zip`](dist/doom.virtual.health-v3.1.0.zip)（1.21.5–26.2）或 [`dist/doom.virtual.health-v3.1.0-mc26.3.zip`](dist/doom.virtual.health-v3.1.0-mc26.3.zip)（26.3），顺手对一下 [SHA256SUMS.txt](dist/SHA256SUMS.txt) |
+| ① | 下载 [`dist/doom.virtual.health-v3.1.1.zip`](dist/doom.virtual.health-v3.1.1.zip)（1.21.5–26.2）或 [`dist/doom.virtual.health-v3.1.1-mc26.3.zip`](dist/doom.virtual.health-v3.1.1-mc26.3.zip)（26.3），顺手对一下 [SHA256SUMS.txt](dist/SHA256SUMS.txt) |
 | ② | 解压，把 `doom.virtual.health/` 整个放进 `<存档>/datapacks/`；服务器放 `world/datapacks/` |
 | ③ | 进世界 `/reload`，然后 `/function doom.virtual.health:__help__` 看聊天栏里的命令清单 |
 
@@ -78,15 +78,15 @@ English: `README.en.md`
 
 ```
 Linux / macOS:        sha256sum -c SHA256SUMS.txt
-Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.0.zip -Algorithm SHA256).Hash
+Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.1.zip -Algorithm SHA256).Hash
 ```
 
 输出 `OK`（或哈希与 `SHA256SUMS.txt` 里那一串相等）就是完整下载；不等就别用，重新下。当前值：
 
 | 文件 | sha256 |
 |---|---|
-| `doom.virtual.health-v3.1.0.zip`（1.21.5–26.2） | `cd556d2b946fb4a8c24a37c242c4e0cedf6f9eb3d296614c0ad17af02032145b` |
-| `doom.virtual.health-v3.1.0-mc26.3.zip`（仅 26.3） | `51bcccbc04d4742c689140863c166aa50e13a683c587735f4e4f741344db8816` |
+| `doom.virtual.health-v3.1.1.zip`（1.21.5–26.2） | `7de698051b48a820896d720ac6176f6de27735b3343dffd22cb489feb5ac12b6` |
+| `doom.virtual.health-v3.1.1-mc26.3.zip`（仅 26.3） | `92a6171b30ea1836e343dd66afc4f15d7ba059c6274f3743d1fab87f128e8e05` |
 
 这个值不是手抄的。`tools/build_dist.py` 打完 zip 会回读每一个条目，与仓库 [`doom.virtual.health/`](doom.virtual.health) 下的同名文件逐字节比，不一致就报错退出。`tools/verify.py` 再把 `SHA256SUMS.txt`、zip、包体三方对一遍。你重新打包得到的 hash 应当与上表完全相同。
 
@@ -94,8 +94,8 @@ Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.0.zip -Algorithm 
 
 | 文件 | 里面是什么 | 适合谁 |
 |---|---|---|
-| `dist/doom.virtual.health-v3.1.0.zip`（1.21.5 – 26.2） | 完整的 `doom.virtual.health/` 数据包：92 个文件（64 个 `.mcfunction` + 24 个 `.json` + 3 个 `.mcdoc` + `pack.mcmeta` + 包内 README），含两个命名空间，`doom.virtual.health`（虚拟血量核心）与 `doom.bossbar`（血条联动，可选，不接也不影响本体） | 1.21.5 – 26.2，绝大多数人下这个 |
-| `dist/doom.virtual.health-v3.1.0-mc26.3.zip`（仅 26.3） | 同一套命令，附魔 JSON 按 26.3 新 schema 修好（`condition`→`type`、`requirements` 数组→单体） | 只在 26.3 上用。26.3 上装上面那份会**让服务器起不来** ✗ |
+| `dist/doom.virtual.health-v3.1.1.zip`（1.21.5 – 26.2） | 完整的 `doom.virtual.health/` 数据包：92 个文件（64 个 `.mcfunction` + 24 个 `.json` + 3 个 `.mcdoc` + `pack.mcmeta` + 包内 README），含两个命名空间，`doom.virtual.health`（虚拟血量核心）与 `doom.bossbar`（血条联动，可选，不接也不影响本体） | 1.21.5 – 26.2，绝大多数人下这个 |
+| `dist/doom.virtual.health-v3.1.1-mc26.3.zip`（仅 26.3） | 同一套命令，附魔 JSON 按 26.3 新 schema 修好（`condition`→`type`、`requirements` 数组→单体） | 只在 26.3 上用。26.3 上装上面那份会**让服务器起不来** ✗ |
 
 ## 它给你什么（核心特性）
 
@@ -118,14 +118,14 @@ Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.0.zip -Algorithm 
 
 | MC 版本 | data format | 用哪份 | 附魔 JSON | 实测 |
 |---|---|---|---|---|
-| 1.21.5 | 71 | `v3.1.0` | 原样 | 12/12 实测 |
-| 1.21.6 | 80 | `v3.1.0` | 原样 | 未单独实测，按同区间外推 |
-| 1.21.7 / 1.21.8 | 81 | `v3.1.0` | 原样 | 未单独实测，按同区间外推 |
-| 1.21.9 / 1.21.10 | 88.0 | `v3.1.0` | 原样 | 12/12 实测（1.21.10） |
-| 1.21.11 | 94.1 | `v3.1.0` | 原样 | 未单独实测，按同区间外推 |
-| 26.1 / 26.1.1 / 26.1.2 | 101.1 | `v3.1.0` | 原样 | 未单独实测，按同区间外推 |
-| 26.2 | 107.1 | `v3.1.0` | 原样 | 未单独实测，按同区间外推 |
-| 26.3 | 121.0 | `v3.1.0-mc26.3` | 已按 26.3 schema 修好 | 12/12 实测 |
+| 1.21.5 | 71 | `v3.1.1` | 原样 | 12/12 实测 |
+| 1.21.6 | 80 | `v3.1.1` | 原样 | 未单独实测，按同区间外推 |
+| 1.21.7 / 1.21.8 | 81 | `v3.1.1` | 原样 | 未单独实测，按同区间外推 |
+| 1.21.9 / 1.21.10 | 88.0 | `v3.1.1` | 原样 | 12/12 实测（1.21.10） |
+| 1.21.11 | 94.1 | `v3.1.1` | 原样 | 未单独实测，按同区间外推 |
+| 26.1 / 26.1.1 / 26.1.2 | 101.1 | `v3.1.1` | 原样 | 未单独实测，按同区间外推 |
+| 26.2 | 107.1 | `v3.1.1` | 原样 | 未单独实测，按同区间外推 |
+| 26.3 | 121.0 | `v3.1.1-mc26.3` | 已按 26.3 schema 修好 | 12/12 实测 |
 | 1.21.4 及更低 | ≤ 61 | 不支持 | — | — |
 
 为什么必须拆两份：26.3 把 `enchantment` 注册表的 JSON 形状改了
@@ -133,9 +133,9 @@ Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.0.zip -Algorithm 
 同一份 JSON 无法同时满足两侧。命令层两份逐字节相同，差异只有
 `pack.mcmeta` + `enchantment/vitality.json` 两个文件。
 
-> ⚠️ **在 26.3 上装 `v3.1.0`（那份给 1.21.5–26.2 的）会让服务器直接起不来**。
+> ⚠️ **在 26.3 上装 `v3.1.1`（那份给 1.21.5–26.2 的）会让服务器直接起不来**。
 > 报 `Registry loading errors: doom.virtual.health:vitality`。
-> 26.3 请用 `v3.1.0-mc26.3`。
+> 26.3 请用 `v3.1.1-mc26.3`。
 
 | 其他 | 能不能用 |
 |---|---|

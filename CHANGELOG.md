@@ -8,6 +8,24 @@ English: `CHANGELOG.en.md`
 
 ---
 
+## v3.1.1 · 署名与链接整理（重打包）· 2026-10-16
+
+- [`dist/doom.virtual.health-v3.1.1.zip`](dist/doom.virtual.health-v3.1.1.zip)：1.21.5 – 26.2（主用）
+- [`dist/doom.virtual.health-v3.1.1-mc26.3.zip`](dist/doom.virtual.health-v3.1.1-mc26.3.zip)：仅 26.3
+ · sha256 `7de698051b48a820896d720ac6176f6de27735b3343dffd22cb489feb5ac12b6`
+ · sha256 `92a6171b30ea1836e343dd66afc4f15d7ba059c6274f3743d1fab87f128e8e05`
+
+> 命令层与 v3.1.0 逐字节相同，63 个 mcfunction 一字未改。
+> 这一版只整理包内 README 的作者名与仓库链接（旧用户名 → `Doom_Flare`），再按规范重打 zip、重算 sha256。
+
+### 能核对什么
+
+- `dist/doom.virtual.health-v3.1.1.zip` 内 92 个条目与仓库 [`doom.virtual.health/`](doom.virtual.health) 下同名文件逐字节相同（0 差异）。
+- `dist/doom.virtual.health-v3.1.1-mc26.3.zip` 内 92 个条目与仓库 [`variants/doom.virtual.health-26.3/`](variants/doom.virtual.health-26.3) 下同名文件逐字节相同（0 差异）。
+- 与 v3.1.0 相比，两份产物都只有包内 `README.md` 一个文件不同，其余 91 个条目逐字节相同。
+
+---
+
 ## v3.1.0 · 多版本支持（1.21.5 → 26.3）· 2026-10-05
 
 下载：

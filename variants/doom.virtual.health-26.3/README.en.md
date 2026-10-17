@@ -12,7 +12,7 @@ Injects a **virtual health system, decoupled from vanilla health**, into Minecra
 - Percentage health checks (`dvh.pp` / `dvh.pp_max` entity-level thresholds)
 - Invulnerability control, damage multiplier (×1000 scale), remainder precision compensation
 - Correct death attribution (UUID hex → `damage ... by <uuid>`)
-- **Needs more player testing**: this is currently an early community version; any anomaly is welcome in [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues)
+- **Needs more player testing**: this is currently an early community version; any anomaly is welcome in [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues)
 
 ---
 
@@ -399,7 +399,7 @@ For example usage see `function/mcdoc.mcfunction`. mcdoc needs Spyglass + the `M
 - The `scale` parameter: `scale:1` = mHP, `scale:1000` = HP
 - Editing the enchantment JSON (vitality.json) requires a **server restart**
 - Damage multiplier range `[1, 100000]` (×1000 scale)
-- **Test feedback**: report anything unusual in [Issues](https://github.com/DoomDecapitator/doom.virtual.health/issues), with reproduction steps and version number
+- **Test feedback**: report anything unusual in [Issues](https://github.com/Doom-Flare/doom.virtual.health/issues), with reproduction steps and version number
 
 ---
 
@@ -435,4 +435,4 @@ doom.virtual.health/
 
 ---
 
-> **Author**: Doom_Decapitator
+> **Author**: Doom_Flare

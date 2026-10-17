@@ -18,8 +18,8 @@ Health is measured in 0.001 HP (mHP), the cap goes up to 95325 HP, and it maps t
 
 | Your MC version | Download this |
 |---|---|
-| 1.21.5 – 26.2 | `dist/doom.virtual.health-v3.1.0.zip` |
-| 26.3 | `dist/doom.virtual.health-v3.1.0-mc26.3.zip` |
+| 1.21.5 – 26.2 | `dist/doom.virtual.health-v3.1.1.zip` |
+| 26.3 | `dist/doom.virtual.health-v3.1.1-mc26.3.zip` |
 
 See "MC version → which variant" below.
 
@@ -39,13 +39,13 @@ This pack has no generator. The source is the 63 mcfunction files under [`doom.v
 
 ## Current status
 
-**v3.1.0 is a full release (Latest)**, supporting Minecraft 1.21.5 through 26.3.
+**v3.1.1 is a full release (Latest)**, supporting Minecraft 1.21.5 through 26.3.
 
-Gameplay behaviour is identical to v3.0.0 (not a single character changed in the 63 mcfunction files). What this release changes is whether it installs at all: 26.3 changed the JSON shape of the `enchantment` registry, and the old form made the server refuse to start; that is fixed and re-verified on a real server.
+The command layer is byte-identical to v3.1.0 (not a single character changed in the 63 mcfunction files). This release only tidies attribution and links: the author name and repository links inside the pack README now point at `Doom_Flare`. Gameplay, commands, the API and save compatibility are unchanged from v3.1.0.
 
-Three real-machine runs, all green: 1.21.5 / 1.21.10 / 26.3 each passed 12/12 assertions, with 0 of the 8 load-error classes.
+The three real-machine runs from v3.1.0 still apply (nothing but the README changed inside the pack): 1.21.5 / 1.21.10 / 26.3 each passed 12/12 assertions, with 0 of the 8 load-error classes.
 
-The `pack.mcmeta` description string inside the pack still says "DVH v3.0"; that is the same version, not an old pack.
+The `pack.mcmeta` description string inside the pack still says "DVH v3.0"; that is a display name kept by convention, not an old pack.
 
 It is ready to install into a world and play, but please back up your world first.
 
@@ -55,7 +55,7 @@ It is ready to install into a world and play, but please back up your world firs
 
 | Step | What to do |
 |---|---|
-| ① | Download [`dist/doom.virtual.health-v3.1.0.zip`](dist/doom.virtual.health-v3.1.0.zip) (1.21.5–26.2) or [`dist/doom.virtual.health-v3.1.0-mc26.3.zip`](dist/doom.virtual.health-v3.1.0-mc26.3.zip) (26.3), and check it against [SHA256SUMS.txt](dist/SHA256SUMS.txt) while you are at it |
+| ① | Download [`dist/doom.virtual.health-v3.1.1.zip`](dist/doom.virtual.health-v3.1.1.zip) (1.21.5–26.2) or [`dist/doom.virtual.health-v3.1.1-mc26.3.zip`](dist/doom.virtual.health-v3.1.1-mc26.3.zip) (26.3), and check it against [SHA256SUMS.txt](dist/SHA256SUMS.txt) while you are at it |
 | ② | Unzip, put the whole `doom.virtual.health/` into `<world>/datapacks/`; on a server put it in `world/datapacks/` |
 | ③ | Enter the world, `/reload`, then `/function doom.virtual.health:__help__` to see the command list in chat |
 
@@ -79,15 +79,15 @@ For more detailed installation steps (including "where does the pack go, how on 
 
 ```
 Linux / macOS:        sha256sum -c SHA256SUMS.txt
-Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.0.zip -Algorithm SHA256).Hash
+Windows PowerShell:   (Get-FileHash .\doom.virtual.health-v3.1.1.zip -Algorithm SHA256).Hash
 ```
 
 If it prints `OK` (or the hash equals the string in `SHA256SUMS.txt`), the download is intact; if not, do not use it, download again. Current values:
 
 | File | sha256 |
 |---|---|
-| `doom.virtual.health-v3.1.0.zip` (1.21.5–26.2) | `cd556d2b946fb4a8c24a37c242c4e0cedf6f9eb3d296614c0ad17af02032145b` |
-| `doom.virtual.health-v3.1.0-mc26.3.zip` (26.3 only) | `51bcccbc04d4742c689140863c166aa50e13a683c587735f4e4f741344db8816` |
+| `doom.virtual.health-v3.1.1.zip` (1.21.5–26.2) | `7de698051b48a820896d720ac6176f6de27735b3343dffd22cb489feb5ac12b6` |
+| `doom.virtual.health-v3.1.1-mc26.3.zip` (26.3 only) | `92a6171b30ea1836e343dd66afc4f15d7ba059c6274f3743d1fab87f128e8e05` |
 
 These values were not copied by hand. `tools/build_dist.py` reads every entry back after building the zip and compares it byte-for-byte with the same-named file under [`doom.virtual.health/`](doom.virtual.health) in the repo, aborting with an error on any mismatch. `tools/verify.py` then cross-checks `SHA256SUMS.txt`, the zip and the pack body against each other. Repacking yourself should produce exactly the hashes above.
 
@@ -95,8 +95,8 @@ These values were not copied by hand. `tools/build_dist.py` reads every entry ba
 
 | File | What is inside | Who it is for |
 |---|---|---|
-| `dist/doom.virtual.health-v3.1.0.zip` (1.21.5 – 26.2) | The complete `doom.virtual.health/` datapack: 92 files (64 `.mcfunction` + 24 `.json` + 3 `.mcdoc` + `pack.mcmeta` + the in-pack README), containing two namespaces, `doom.virtual.health` (virtual health core) and `doom.bossbar` (health bar integration, optional — not wiring it up does not affect the core) | 1.21.5 – 26.2; this is what almost everyone wants |
-| `dist/doom.virtual.health-v3.1.0-mc26.3.zip` (26.3 only) | The same commands, with the enchantment JSON fixed for the new 26.3 schema (`condition`→`type`, `requirements` array→single object) | Only for 26.3. Installing the one above on 26.3 will **stop your server from starting** ✗ |
+| `dist/doom.virtual.health-v3.1.1.zip` (1.21.5 – 26.2) | The complete `doom.virtual.health/` datapack: 92 files (64 `.mcfunction` + 24 `.json` + 3 `.mcdoc` + `pack.mcmeta` + the in-pack README), containing two namespaces, `doom.virtual.health` (virtual health core) and `doom.bossbar` (health bar integration, optional — not wiring it up does not affect the core) | 1.21.5 – 26.2; this is what almost everyone wants |
+| `dist/doom.virtual.health-v3.1.1-mc26.3.zip` (26.3 only) | The same commands, with the enchantment JSON fixed for the new 26.3 schema (`condition`→`type`, `requirements` array→single object) | Only for 26.3. Installing the one above on 26.3 will **stop your server from starting** ✗ |
 
 ## What it gives you (core features)
 
@@ -119,14 +119,14 @@ These values were not copied by hand. `tools/build_dist.py` reads every entry ba
 
 | MC version | data format | Which one | Enchantment JSON | Real-machine test |
 |---|---|---|---|---|
-| 1.21.5 | 71 | `v3.1.0` | as-is | 12/12 tested |
-| 1.21.6 | 80 | `v3.1.0` | as-is | not tested individually, extrapolated from the same range |
-| 1.21.7 / 1.21.8 | 81 | `v3.1.0` | as-is | not tested individually, extrapolated from the same range |
-| 1.21.9 / 1.21.10 | 88.0 | `v3.1.0` | as-is | 12/12 tested (1.21.10) |
-| 1.21.11 | 94.1 | `v3.1.0` | as-is | not tested individually, extrapolated from the same range |
-| 26.1 / 26.1.1 / 26.1.2 | 101.1 | `v3.1.0` | as-is | not tested individually, extrapolated from the same range |
-| 26.2 | 107.1 | `v3.1.0` | as-is | not tested individually, extrapolated from the same range |
-| 26.3 | 121.0 | `v3.1.0-mc26.3` | fixed for the 26.3 schema | 12/12 tested |
+| 1.21.5 | 71 | `v3.1.1` | as-is | 12/12 tested |
+| 1.21.6 | 80 | `v3.1.1` | as-is | not tested individually, extrapolated from the same range |
+| 1.21.7 / 1.21.8 | 81 | `v3.1.1` | as-is | not tested individually, extrapolated from the same range |
+| 1.21.9 / 1.21.10 | 88.0 | `v3.1.1` | as-is | 12/12 tested (1.21.10) |
+| 1.21.11 | 94.1 | `v3.1.1` | as-is | not tested individually, extrapolated from the same range |
+| 26.1 / 26.1.1 / 26.1.2 | 101.1 | `v3.1.1` | as-is | not tested individually, extrapolated from the same range |
+| 26.2 | 107.1 | `v3.1.1` | as-is | not tested individually, extrapolated from the same range |
+| 26.3 | 121.0 | `v3.1.1-mc26.3` | fixed for the 26.3 schema | 12/12 tested |
 | 1.21.4 and older | ≤ 61 | not supported | — | — |
 
 Why the split is unavoidable: 26.3 changed the JSON shape of the `enchantment` registry
@@ -134,9 +134,9 @@ Why the split is unavoidable: 26.3 changed the JSON shape of the `enchantment` r
 and one JSON file cannot satisfy both sides. The command layer is byte-identical between the two; the only difference is
 `pack.mcmeta` + `enchantment/vitality.json`.
 
-> ⚠️ **Installing `v3.1.0` (the one for 1.21.5–26.2) on 26.3 stops the server from starting at all**.
+> ⚠️ **Installing `v3.1.1` (the one for 1.21.5–26.2) on 26.3 stops the server from starting at all**.
 > It reports `Registry loading errors: doom.virtual.health:vitality`.
-> On 26.3 use `v3.1.0-mc26.3`.
+> On 26.3 use `v3.1.1-mc26.3`.
 
 | Other | Does it work |
 |---|---|

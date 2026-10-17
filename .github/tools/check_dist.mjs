@@ -26,8 +26,8 @@ const WRITE = process.argv.includes('--write');
 
 // zip ↔ 包体目录 的对应关系（只列当前发布物；旧版 zip 不进清单）
 const PAIRS = [
-  ['doom.virtual.health-v3.1.0.zip', path.join(ROOT, 'doom.virtual.health')],
-  ['doom.virtual.health-v3.1.0-mc26.3.zip', path.join(ROOT, 'variants', 'doom.virtual.health-26.3')],
+  ['doom.virtual.health-v3.1.1.zip', path.join(ROOT, 'doom.virtual.health')],
+  ['doom.virtual.health-v3.1.1-mc26.3.zip', path.join(ROOT, 'variants', 'doom.virtual.health-26.3')],
 ];
 
 /* ---------- 最小 ZIP 读取器 ---------- */
@@ -129,7 +129,7 @@ if (!fs.existsSync(sumsPath)) {
   const notListed = zips.filter((f) => !listed.has(f));
   const notFile = [...listed.keys()].filter((f) => !zips.includes(f));
   // 旧版 zip 允许不进清单（RELEASING：旧版本不删，但要标「已被取代」）
-  const superseded = notListed.filter((f) => /v3\.0\.0|-v[0-9]+\.[0-9]+\.0\.zip$/.test(f));
+  const superseded = notListed.filter((f) => /v3\.0\.0|-v3\.1\.0(?:-mc26\.3)?\.zip$/.test(f));
   const reallyMissing = notListed.filter((f) => !superseded.includes(f));
   if (reallyMissing.length) err('这几个 zip 没列进 SHA256SUMS.txt: ' + reallyMissing.join(', '));
   if (notFile.length) err('清单里这几行没有对应文件: ' + notFile.join(', '));
